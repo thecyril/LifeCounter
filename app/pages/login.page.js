@@ -23,7 +23,7 @@ export default class LoginPage extends React.Component {
 
     firebase
       .auth()
-      .signInWithEmailAndPassword('thierry+1@fabrikapp.fr', 'test1234')
+      .signInWithEmailAndPassword(email, password)
       .catch(error => {
         console.log(error);
         this.setState({errorMessage: error.message});
